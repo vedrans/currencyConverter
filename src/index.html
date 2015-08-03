@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Currency Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>Currency Conversion</h1>
+        <p class="lead">Currency Conversion Application</p>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label" for="currency_input">Conversion Value</label>
+        <input type="text" id="currency_input" class="form-control input-lg" autofocus value="1">
+      </div>
+
+      <div class="btn-group" data-toggle="buttons" id="toolbar">
+          <h5>Choose Base Currency:</h5>
+      </div>
+
+      <div class="conversion-result"></div>
+      <small><strong>Disclaimer:</strong> I cannot guarantee the accuracy of the exchange rates displayed. You should confirm current rates before making any transactions that could be affected by changes in the exchange rates.</small>
+
+      <hr>
+      <div class="text-center"><small>Copyright &copy; <span id="year">2015</span> <a href="http://www.vedrans.me">Vedran Stankovic</a>. All rights reserved. </small></div>
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/CurrencyConverter.js"></script>
+    <script src="js/convert.js"></script>
+    <script>
+      document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>
